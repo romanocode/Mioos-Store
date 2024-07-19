@@ -98,12 +98,39 @@ nav .icons button {
   color: var(--color);
 }
 
+section {
+  width: 100%;
+  height: auto;
+}
+section h2 {
+  color: #2b2a2a;
+  font-size: 2em;
+}
+section .girls h2 {
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+section .girls .product-card {
+  width: 15vw;
+  height: auto;
+  background-color: #FFBCDF;
+  color: #2b2a2a;
+  padding: 20px;
+  border-radius: 8px;
+}
+section .girls .product-card img {
+  width: 200px;
+  height: 200px;
+  background-image: cover;
+  border-radius: 6px;
+}
+
 main {
   background-color: #E7F9FF;
 }
 
-.footer {
-  background-color: #0090FB;
+footer {
+  background: #61BCFF;
   width: 100%;
   height: 250px;
 }/*# sourceMappingURL=main.css.map */
