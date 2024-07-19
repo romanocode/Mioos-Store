@@ -6,6 +6,11 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+main {
+  background-color: #E7F9FF;
+  margin-left: 20px;
+}
+
 nav {
   background-color: #61BCFF;
   width: auto;
@@ -99,34 +104,66 @@ nav .icons button {
 }
 
 section {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 section h2 {
   color: #2b2a2a;
   font-size: 2em;
 }
-section .girls h2 {
+section .girls, section .boys {
+  padding-bottom: 50px;
+}
+section .girls h2, section .boys h2 {
   font-weight: 300;
   padding-bottom: 60px;
 }
-section .girls .product-card {
-  width: 15vw;
+section .girls .card-section, section .boys .card-section {
+  display: flex;
+  width: auto;
   height: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  row-gap: 80px;
+}
+section .girls .card-section .product-card, section .boys .card-section .product-card {
+  width: 15vw;
+  height: 48vh;
   background-color: #FFBCDF;
   color: #2b2a2a;
   padding: 20px;
   border-radius: 8px;
 }
-section .girls .product-card img {
-  width: 200px;
-  height: 200px;
-  background-image: cover;
+section .girls .card-section .product-card .icon, section .boys .card-section .product-card .icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+section .girls .card-section .product-card .icon svg, section .boys .card-section .product-card .icon svg {
+  width: 25px;
+  height: 25px;
+}
+section .girls .card-section .product-card .product-image, section .boys .card-section .product-card .product-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .girls .card-section .product-card .product-image img, section .boys .card-section .product-card .product-image img {
+  width: 20vw;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 6px;
 }
-
-main {
-  background-color: #E7F9FF;
+section .boys .product-card {
+  background-color: #61BCFF;
+  color: #ffffff;
 }
 
 footer {
