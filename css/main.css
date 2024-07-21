@@ -161,13 +161,100 @@ section .girls .card-section .product-card .product-image img, section .boys .ca
      object-fit: cover;
   border-radius: 6px;
 }
-section .boys .product-card {
+section .boys .card-section .product-card {
   background-color: #61BCFF;
   color: #ffffff;
+}
+
+.about-us {
+  padding-bottom: 60px;
+}
+.about-us h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.about-us .mision-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-us .mision-section .earth, .about-us .mision-section .innovation {
+  width: 40vw;
+  display: flex;
+  gap: 40px;
+  color: #0583f9;
+}
+.about-us .mision-section .earth img, .about-us .mision-section .innovation img {
+  color: #00A97F;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-us .mision-section .earth p, .about-us .mision-section .innovation p {
+  text-align: center;
+  font-size: 1.5em;
+}
+.gallery h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.gallery .gallery-images {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .gallery-images img {
+  width: 20vw;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 5px 35%;
+     object-position: 5px 35%;
+  border-radius: 16px;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
+}
+
+.location {
+  color: #0583f9;
+}
+.location h2 {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.location .map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.location .map #img-map {
+  border: 3px solid #0583f9;
+  border-radius: 16px;
+}
+.location h3 {
+  font-size: 1.5em;
+}
+.location p {
+  font-size: 1.5em;
 }
 
 footer {
   background: #61BCFF;
   width: 100%;
-  height: 250px;
+  height: auto;
+  padding: 40px;
+  color: white;
+}
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 40px;
 }/*# sourceMappingURL=main.css.map */
